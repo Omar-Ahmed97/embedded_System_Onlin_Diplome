@@ -1,0 +1,23 @@
+/* startup_cortex-m3.s
+Eng.Omar
+*/
+
+//SRAM 0x20000000
+
+.section .vectors
+
+.word	0x20001000	/*stack top address */ 
+.word	_reset		/* 1 reset */
+.word	_Vector_handler
+.word	_Vector_handler
+
+.section .text
+
+_reset:
+	bl main
+	b .
+	
+.thumb_func 
+
+_Vector_handler:
+	b _reset
