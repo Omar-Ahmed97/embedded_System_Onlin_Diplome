@@ -1,0 +1,3 @@
+keypad_driver.c:18:6:KEYPAD_DataDir_Output	8	static
+keypad_driver.c:80:6:KEYPAD_INIT	8	static
+keypad_driver.c:90:6:KEYPAD_GETCHAR	16	static
